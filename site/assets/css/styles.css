@@ -355,7 +355,7 @@ svg {
 }
 
 .button:hover {
-  box-shadow: 0 8px 24px hsla(--hue, 100%, 40%, 0.25);
+  box-shadow: 0 8px 24px var(--first-color-alt);
 }
 
 /*=============== ABOUT ===============*/
@@ -453,7 +453,7 @@ svg {
 .services__title {
   font-size: var(--h2-font-size);
   margin-bottom: 1.5rem;
-  color: #333333;
+  color: #d6d4d4;
 }
 
 .services__card:hover {
@@ -591,6 +591,17 @@ svg {
 }
 
 /*=============== FOOTER ===============*/
+.destrave {
+  color: rgb(169, 91, 169);
+  font-weight: bold;
+  transition: transform 0.4s;
+}
+
+.destrave:hover{
+  text-decoration: overline;
+  transform: translateY(-0.25rem);
+}
+
 .footer {
   background-color: var(--body-color);
   padding-block: 3.5rem 2rem;
@@ -657,28 +668,27 @@ svg {
 }
 
 /*=============== SCROLL UP ===============*/
-.scrollup {
+.scrollup{
   position: fixed;
   right: 1rem;
-  bottom: -50%;
-  background-color: var(--body-color);
-  padding: 6px;
+  bottom: -30%;
+  background-color: transparent;
+  filter: drop-shadow(0 2px 4px rgb(20, 220, 63));
   display: inline-flex;
-  border-radius: 0.25rem;
-  color: var(--first-color);
-  font-size: 1.25rem;
-  box-shadow: 0 4px 12px hsla(228, 15%, 8%, 0.4);
+  padding: .35rem;
+  color: var(--title-color);
+  font-size: 1.5rem;
   z-index: var(--z-tooltip);
-  transition: bottom 0.4s, transform 0.4s;
+  transition: .3s;
 }
 
-.scrollup:hover {
-  transform: translateY(-0.25rem);
+.scrollup:hover{
+  transform: translateY(-.25rem);
 }
 
-/* Show Scroll Up */
-.show-scroll {
-  bottom: 3rem;
+/* Show Scroll Up*/
+.show-scroll{
+  bottom: 2.5rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -881,7 +891,7 @@ svg {
   }
 
   .contact__form textarea {
-    height: 20rem;
+    height: 10rem;
   }
 
   .footer {
