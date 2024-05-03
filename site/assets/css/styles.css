@@ -833,6 +833,7 @@ svg {
 
   .about__description {
     margin-bottom: 3rem;
+    text-align: justify;
   }
 
   .skills__container {

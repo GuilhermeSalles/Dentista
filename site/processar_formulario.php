@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $desc = $_POST["user_project"];
 
     // E-mail de destino
-    $to = "streetwork.financeiro@gmail.com";
+    $to = "isabella@drisabellaalbergoni.com.br";
 
     // Assunto do e-mail
     $subject = "Novo formulário de contato Site";
