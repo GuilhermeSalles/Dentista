@@ -359,6 +359,9 @@ svg {
 }
 
 /*=============== ABOUT ===============*/
+.about{
+  background-color:var(--body-color);
+}
 .about__container {
   row-gap: 2.5rem;
 }
