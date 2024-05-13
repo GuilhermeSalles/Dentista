@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Enviar e-mail
     if (mail($to, $subject, $message, $headers)) {
         echo 'A mensagem foi enviada!';
-    } else {
-        echo 'Erro ao enviar o e-mail.';
-    }
+    }    echo '<script>alert("Mensagem enviada com sucesso!"); window.location.href = "index.html";</script>';
+} else {
+    echo '<script>alert("Erro ao enviar mensagem. Por favor, tente novamente mais tarde."); window.location.href = "index.html";</script>';
 }
